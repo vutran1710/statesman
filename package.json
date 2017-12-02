@@ -1,0 +1,48 @@
+{
+  "name": "statesman",
+  "version": "1.0.0",
+  "description": "State Management for React",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "build:watch": "babel -w src -d dist",
+    "prepublish": "npm run build",
+    "cover": "node_modules/istanbul/lib/cli.js cover ava",
+    "test": "ava"
+  },
+  "keywords": [
+    "state",
+    "redux",
+    "react",
+    "management",
+    "statiny",
+    "statesman",
+    "eventsourcing"
+  ],
+  "author": "Vu Tran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vutran1710/statesman/issues"
+  },
+  "homepage": "https://github.com/vutran1710/statesman#readme",
+  "devDependencies": {
+    "ava": "^0.24.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "istanbul": "^0.4.5",
+    "react": "15.0.0",
+    "react-dom": "15.0.0"
+  },
+  "ava": {
+    "files": [
+      "trial/*.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  }
+}
