@@ -10,8 +10,8 @@
     "build": "babel src -d dist",
     "build:watch": "babel -w src -d dist",
     "prepublish": "npm run build",
-    "cover": "node_modules/istanbul/lib/cli.js cover ava",
-    "test": "ava"
+    "cover": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc ava"
   },
   "keywords": [
     "state",
@@ -35,7 +35,9 @@
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "coveralls": "^3.0.0",
     "istanbul": "^0.4.5",
+    "nyc": "^11.3.0",
     "react": "15.0.0",
     "react-dom": "15.0.0"
   },
