@@ -1,5 +1,5 @@
 {
-  "name": "statesman",
+  "name": "react-statesman",
   "version": "1.0.0",
   "description": "State Management for React",
   "main": "dist/index.js",

@@ -13,7 +13,7 @@
 
 #### Install statesman:
 ```
-$ npm install -S statesman
+$ npm install -S react-statesman
 ```
 
 #### How to use
@@ -22,7 +22,7 @@ In your React app:
 ```
 import App from './App'
 import ReactDOM from 'react-dom'
-import { statesman } from 'statesman'
+import { statesman } from 'react-statesman'
 
 statesman.createStore({
   prop1: 'awesome',
@@ -31,20 +31,20 @@ statesman.createStore({
 ```
 ##### Then in your component, have it connected to store and pick the props you need:
 ```
-import { connect } from 'statesman'
-const mycomponent = ({ prop1 }) => <div>{`Yay! it is sooo ${prop1}`}</div>
+import { connect } from 'react-statesman'
+const Mycomponent = ({ prop1 }) => <div>{`Yay! it is sooo ${prop1}`}</div>
 
-export default connect(mycomponent, ['prop1'])
+export default connect(Mycomponent, ['prop1'])
 ```
 ##### Props can be changed with default "dispatch" prop applied to all connectd component:
 ```
-const mycomponent2 = ({ prop2, dispatch }) => (
+const Mycomponent2 = ({ prop2, dispatch }) => (
     <button onClick={() => dispatch({ prop2: 'Good job' })}>
         Click to dispatch!
     </button>
 )
 
-export default connect(mycomponent2, ['prop2'])
+export default connect(Mycomponent2, ['prop2'])
 ```
 
 ### Hint:
