@@ -1,6 +1,6 @@
 {
   "name": "react-statesman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "State Management for React",
   "main": "dist/index.js",
   "files": [
