@@ -1,5 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/vutran1710/statesman/badge.svg?branch=master)](https://coveralls.io/github/vutran1710/statesman?branch=master)
-[![Build Status](https://travis-ci.org/vutran1710/statiny.svg?branch=master)](https://travis-ci.org/vutran1710/statiny)
+[![Build Status](https://travis-ci.org/vutran1710/statesman.svg?branch=master)](https://travis-ci.org/vutran1710/statesman)
 
 # Made-easy Minimal State Management for React App
 - Based on the similar idea of Redux
