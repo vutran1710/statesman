@@ -11,7 +11,7 @@
     "build:watch": "babel -w src -d dist",
     "prepublish": "npm run build",
     "cover": "nyc report --reporter=text-lcov | coveralls",
-    "test": "nyc ava",
+    "test": "nyc ava --tap | tap-nyan",
     "test:watch": "nyc ava --watch"
   },
   "keywords": [
@@ -43,7 +43,8 @@
     "nyc": "^11.3.0",
     "react": "^16.0.0",
     "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "tap-nyan": "^1.1.0"
   },
   "ava": {
     "files": [
