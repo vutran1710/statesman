@@ -5,6 +5,9 @@ import Adapter from 'enzyme-adapter-react-16'
 import { statesman, connect } from '../src/index'
 
 configure({ adapter: new Adapter() })
+statesman.createStore({ title: 'Hello World' })
+
+test('Improper connection to store', t => t.throws(() => connect()))
 
 const Foo = ({ title }) => (
   <div>
@@ -12,7 +15,6 @@ const Foo = ({ title }) => (
   </div>
 )
 
-statesman.createStore({ title: 'Hello World' })
 const Connected = connect(Foo, ['title'])
 const wrapper = shallow(<Connected outsideProp="Voila" />)
 
