@@ -1,57 +1,27 @@
 {
   "name": "react-statesman",
-  "version": "1.0.1",
-  "description": "State Management for React",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "version": "2.0.0",
+  "description": "new statesman",
+  "main": "index.js",
   "scripts": {
-    "build": "babel src -d dist",
-    "build:watch": "babel -w src -d dist",
-    "prepublish": "npm run build",
-    "cover": "nyc report --reporter=text-lcov | coveralls",
-    "test": "nyc ava",
-    "test:watch": "nyc ava --watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vutran1710/statesman.git"
   },
   "keywords": [
     "state",
-    "redux",
     "react",
-    "management",
-    "statiny",
     "statesman",
-    "eventsourcing"
+    "redux",
+    "mini",
+    "lightweight"
   ],
-  "author": "Vu Tran",
+  "author": "Vutran (vutr.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/vutran1710/statesman/issues"
   },
-  "homepage": "https://github.com/vutran1710/statesman#readme",
-  "devDependencies": {
-    "ava": "^0.24.0",
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
-    "coveralls": "^3.0.0",
-    "enzyme": "^3.2.0",
-    "enzyme-adapter-react-16": "^1.1.0",
-    "istanbul": "^0.4.5",
-    "nyc": "^11.3.0",
-    "react": "^16.0.0",
-    "react-addons-test-utils": "^15.6.2",
-    "react-dom": "^16.0.0"
-  },
-  "ava": {
-    "files": [
-      "trial/*.js"
-    ],
-    "require": [
-      "babel-register"
-    ],
-    "babel": "inherit"
-  }
+  "homepage": "https://github.com/vutran1710/statesman#readme"
 }
